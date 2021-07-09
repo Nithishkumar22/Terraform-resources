@@ -1,0 +1,12 @@
+#launching a ec2 instance type using terraform code
+
+provider "aws" {
+ access_key = "ACCESS KEY"
+ secret_key = "SECRET KEY"
+ region = "ap-south-1"
+}
+
+resource "aws_instance" "NAME OF INSTANCE" {
+ ami     = "ami-00bf4ae5a7909786c"
+ instance_type = "t2.micro"
+}
